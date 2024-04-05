@@ -38,7 +38,7 @@ SELECT CONCAT(m.Fname," ",m.Lname) AS manager_name, e.* FROM employee e
 LEFT JOIN manager m ON e.Super_ssn = m.Ssn OR e.Super_ssn IS NULL
 WHERE e.Super_ssn IS NOT NULL OR m.Fname = "James";
 ```
-- *Consulte o SQL que utiliza para juntar colaboradores com seus gerentes:*
+- *Ao mesclar departamento com localização temos o departamento Research em 3 locais diferentes porém com o mesmo ID o que causou duplicatas nos dados, portanto preferi nesse momento não fazer a mesclagem com localização e apenas deixar o departamento por funcionar.*
 
 <br>
 
@@ -109,14 +109,3 @@ relatorio-mysql-pwbi |
 >Acesso ao site **Microsoft Power BI**, _Experimente o Power BI como parte de uma conta gratuita do Microsoft Fabric._ em <https://app.powerbi.com/>
 
 <br>
-
-
-
-
-
-
-
-**Tipo de Estrutura:**
-
-O relatório de vendas utiliza uma estrutura de **painel** com diversos elementos interativos para visualizar e analisar dados. Essa estrutura facilita a navegação e a compreensão das informações, permitindo que o usuário explore diferentes métricas e dimensões de forma dinâmica.
-
